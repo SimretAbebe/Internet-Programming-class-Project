@@ -1,0 +1,116 @@
+/* CS-55 Time Capsule - Home Page Styles */
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 0;
+  color: #4a5568;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #667eea;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #718096;
+}
+
+/* About Section */
+.about {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  border-radius: 10px;
+  border-left: 5px solid #667eea;
+}
+
+.about h3 {
+  color: #667eea;
+  font-size: 1.8rem;
+}
+
+/* Call to Action Section */
+.call-to-action {
+  text-align: center;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 10px;
+}
+
+.call-to-action h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: wheat;
+}
+
+/* ===== Team Members Section ===== */
+.team-members {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f5f7fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team-members h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.member {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border-left: 4px solid #6366f1; /* Professional accent */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+  color: #444;
+}
+
+.member .id {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsiveness for Home Page */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .about,
+  .call-to-action {
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .about h3 {
+    font-size: 1.5rem;
+  }
+
+  .call-to-action h3 {
+    font-size: 1.5rem;
+  }
+}

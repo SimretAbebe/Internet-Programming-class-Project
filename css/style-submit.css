@@ -1,0 +1,183 @@
+/* CS-55 Time Capsule - Submit Page Styles */
+
+/* Form Header */
+.form-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #4a5568;
+}
+
+.form-header h2 {
+  font-size: 2.5rem;
+  color: #667eea;
+}
+
+/* Memory Form Container */
+.memory-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+/* Form Inputs */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+/* ===== Team Members Section ===== */
+.team-members {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f5f7fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team-members h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.member {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border-left: 4px solid #6366f1; /* Professional accent */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+  color: #444;
+}
+
+.member .id {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+/* ===== Image Upload Field ===== */
+
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 2px dashed #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+  color: #4a5568;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.form-group input[type="file"]:hover {
+  border-color: #667eea;
+  background-color: #f8faff;
+}
+
+/* Focus effect (keyboard accessibility) */
+.form-group input[type="file"]:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Optional helper text */
+.file-hint {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+/* Mobile Responsiveness for Submit Form */
+@media (max-width: 768px) {
+  .form-header h2 {
+    font-size: 2rem;
+  }
+
+  .memory-form {
+    max-width: 100%;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+
+  .submit-button {
+    padding: 0.9rem;
+    font-size: 1rem;
+  }
+}

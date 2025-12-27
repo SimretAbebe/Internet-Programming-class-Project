@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS-55 Time Capsule - My Memory</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-submit.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CS-55 Time Capsule</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="memories.html">Memory Wall</a>
+        <a href="submit.html">My Memory</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="form-header">
+        <h2>Share Your Memory</h2>
+        <p>Add your story to our CS-55 Time Capsule</p>
+      </section>
+
+      <section class="memory-form">
+        <form id="memoryForm">
+          <div class="form-group">
+            <label for="name">Name or Nickname (optional)</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name or leave blank for anonymous"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="year">Year *</label>
+            <select id="year" name="year" required>
+              <option value="">Select Year</option>
+              <option value="Freshman">Freshman</option>
+              <option value="Sophomore">Sophomore</option>
+              <option value="Junior">Junior</option>
+              <option value="Senior">Senior</option>
+              <option value="Graduate">Graduate</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="department">Department *</label>
+            <select id="department" name="department" required>
+              <option value="">Select Department</option>
+              <option value="Computer Science">Computer Science</option>
+              <option value="Information Technology">
+                Information Technology
+              </option>
+              <option value="Software Engineering">Software Engineering</option>
+              <option value="Data Science">Data Science</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="title">Memory Title *</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Give your memory a title"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="description">Memory Description *</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="5"
+              placeholder="Tell us your story..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="category">Category *</label>
+            <select id="category" name="category" required>
+              <option value="">Select Category</option>
+              <option value="Joke">😂 Joke</option>
+              <option value="Roast">🔥 Roast</option>
+              <option value="Pain">😩 Pain</option>
+              <option value="Win">🎉 Win</option>
+              <option value="CS Chaos">💻 CS Chaos</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="image">Upload Memory Image (optional)</label>
+            <input type="file" id="image" accept="image/*" />
+            <small class="file-hint"
+              >Accepted formats: JPG, PNG, JPEG, WEBP, GIF</small
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="emoji">Emoji (optional)</label>
+            <input
+              type="text"
+              id="emoji"
+              name="emoji"
+              placeholder="Add an emoji to represent your memory"
+            />
+          </div>
+
+          <button type="submit" class="submit-button">Save Memory</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">CS-55 Time Capsule</div>
+          <div class="footer-copyright">
+            <h3>
+              &copy; 2025 CS-55 Time Capsule | Created by our amazing team
+            </h3>
+            <div class="team-members">
+              <div class="members-grid">
+                <div class="member">
+                  1. Sunan Ali <span class="id">1602482</span>
+                </div>
+                <div class="member">
+                  2. Ermiyas Antenayehu <span class="id">1601395</span>
+                </div>
+                <div class="member">
+                  3. Simret Abebe <span class="id">1602442</span>
+                </div>
+                <div class="member">
+                  4. Seid Tilahun <span class="id">1602390</span>
+                </div>
+                <div class="member">
+                  5. Betelhem Hawultu <span class="id">1601053</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
