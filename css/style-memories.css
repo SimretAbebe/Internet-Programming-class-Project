@@ -2,121 +2,125 @@
 
 /* Memories Header */
 .memories-header {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #4a5568;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #4a5568;
 }
 
 .memories-header h2 {
-    font-size: 2.5rem;
-    color: #667eea;
+  font-size: 2.5rem;
+  color: #667eea;
 }
 
 /* Memory Grid Layout */
 .memories-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
 /* Memory Card Styles */
 .memory-card {
-    background: white;
-    border-radius: 15px;
-    padding: 1.5rem;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-    position: relative;
-    overflow: hidden;
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
 }
 
 .memory-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    border-color: #667eea;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-color: #667eea;
 }
 
 .memory-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
 }
 
 /* Memory Card Meta Information */
 .memory-meta {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-    color: #718096;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #718096;
 }
 
 .memory-name {
-    font-weight: 600;
-    color: #4a5568;
+  font-weight: 600;
+  color: #4a5568;
 }
 
 /* Category Styles */
 .memory-category {
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-
-.category-joke { background: #fef5e7; color: #d69e2e; }
-.category-roast { background: #fed7d7; color: #e53e3e; }
-.category-pain { background: #e6fffa; color: #319795; }
-.category-win { background: #c6f6d5; color: #38a169; }
-.category-cs-chaos { background: #e2e8f0; color: #4a5568; }
 
 /* Memory Content */
 .memory-title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #2d3748;
-    margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
 }
 
 .memory-description {
-    color: #4a5568;
-    margin-bottom: 1rem;
-    line-height: 1.5;
+  color: #4a5568;
+  margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
 .memory-emoji {
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Memory Image Styles - Fix for expanded images */
+.memory-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1rem 0;
+  display: block;
 }
 
 /* Memory Details (shown on click) */
 .memory-details {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid #e2e8f0;
-    font-size: 0.85rem;
-    color: #718096;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+  font-size: 0.85rem;
+  color: #718096;
 }
 
 /* No Memories Message */
 .no-memories {
-    text-align: center;
-    padding: 4rem 2rem;
-    color: #718096;
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #718096;
 }
 
 .no-memories h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #4a5568;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4a5568;
 }
 /* ===== Team Members Section ===== */
 .team-members {
@@ -126,7 +130,7 @@
   background-color: #f5f7fa;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .team-members h2 {
@@ -164,24 +168,28 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-
 /* Mobile Responsiveness for Memory Wall */
 @media (max-width: 768px) {
-    .memories-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
+  .memories-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 
-    .memory-card {
-        padding: 1rem;
-    }
+  .memory-card {
+    padding: 1rem;
+  }
 
-    .memory-meta {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+  .memory-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 
-    .memory-title {
-        font-size: 1.2rem;
-    }
+  .memory-title {
+    font-size: 1.2rem;
+  }
+
+  .memory-image {
+    max-height: 150px;
+    margin: 0.8rem 0;
+  }
 }
